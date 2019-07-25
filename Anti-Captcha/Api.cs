@@ -2,15 +2,16 @@
 
 namespace AntiCaptcha
 {
-    public class Api
+    public class AntiCaptchaApi
     {
         private readonly Http.Client Client;
 
-        public String Host { get; set; } = "https://api.anti-captcha.com";
+        public String Host { get; set; }
         public String ClientKey { get; set; }
 
-        public Api(String ClientKey)
+        public AntiCaptchaApi(String Host, String ClientKey)
         {
+            this.Host = Host;   
             this.ClientKey = ClientKey;
             this.Client = new Http.Client();
         }

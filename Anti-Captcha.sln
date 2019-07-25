@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anti-Captcha", "Anti-Captcha\Anti-Captcha.csproj", "{4CE7E6F7-2C1B-41C7-ACF5-6BDF51050008}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anti-Captcha", "Anti-Captcha\Anti-Captcha.csproj", "{A3AC168C-1BA5-4104-B509-4C943FFB9B03}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anti-Captcha Test", "Anti-Captcha Test\Anti-Captcha Test.csproj", "{2A5C4BEC-C4A4-4F14-8F24-D7CC3CE36CBD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4CE7E6F7-2C1B-41C7-ACF5-6BDF51050008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CE7E6F7-2C1B-41C7-ACF5-6BDF51050008}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CE7E6F7-2C1B-41C7-ACF5-6BDF51050008}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CE7E6F7-2C1B-41C7-ACF5-6BDF51050008}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AC168C-1BA5-4104-B509-4C943FFB9B03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AC168C-1BA5-4104-B509-4C943FFB9B03}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AC168C-1BA5-4104-B509-4C943FFB9B03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AC168C-1BA5-4104-B509-4C943FFB9B03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5C4BEC-C4A4-4F14-8F24-D7CC3CE36CBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5C4BEC-C4A4-4F14-8F24-D7CC3CE36CBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5C4BEC-C4A4-4F14-8F24-D7CC3CE36CBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5C4BEC-C4A4-4F14-8F24-D7CC3CE36CBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,7 +8,7 @@ namespace Anti_Captcha
     {
         static void Main(string[] args)
         {
-            Api AntiCaptchaApi = new Api("Client Key");
+            AntiCaptchaApi AntiCaptchaApi = new AntiCaptchaApi("https://api.anti-captcha.com", "Client Key");
             NoCaptchaTaskProxyless captchaTask = new NoCaptchaTaskProxyless("Website Url", "Website Key");
 
             System.Threading.Tasks.Task.Run(async () =>
