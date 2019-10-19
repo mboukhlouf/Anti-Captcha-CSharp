@@ -19,7 +19,7 @@ namespace AntiCaptcha
         public async System.Threading.Tasks.Task<TaskResponse> CreateTaskAsync<TTaskType>(TTaskType taskType)
         {
             String url = $"{Host}/createTask";
-            Task<TTaskType> task = new Task<TTaskType>()
+            AntiCaptchaTask<TTaskType> task = new AntiCaptchaTask<TTaskType>()
             {
                 ClientKey = this.ClientKey,
                 TaskType = taskType,

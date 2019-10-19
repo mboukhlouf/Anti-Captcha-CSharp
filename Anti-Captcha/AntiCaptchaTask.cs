@@ -9,7 +9,7 @@ using System.Text;
 namespace AntiCaptcha
 {
     [DataContract]
-    public class Task<TTaskType>
+    public class AntiCaptchaTask<TTaskType>
     {
         [DataMember(Order = 0, Name = "clientKey", IsRequired = true)]
         public String ClientKey { get; set; }
@@ -26,7 +26,7 @@ namespace AntiCaptcha
         [DataMember(Order = 4, Name = "callbackUrl", IsRequired = false)]
         public String CallbackUrl { get; set; }
 
-        public Task()
+        public AntiCaptchaTask()
         {
             this.ClientKey = "";
             this.TaskType = default(TTaskType);
@@ -35,7 +35,7 @@ namespace AntiCaptcha
             this.CallbackUrl = "";
         }
 
-        public Task(String ClientKey, TTaskType TaskType, int SoftId = 0, String LanguagePool = "en", String CallbackUrl = "")
+        public AntiCaptchaTask(String ClientKey, TTaskType TaskType, int SoftId = 0, String LanguagePool = "en", String CallbackUrl = "")
         {
             this.ClientKey = ClientKey;
             this.TaskType = TaskType;
@@ -46,12 +46,12 @@ namespace AntiCaptcha
 
         public String ToJson()
         {
-            return JsonHelper.ToJson<Task<TTaskType>>(this);
+            return JsonHelper.ToJson<AntiCaptchaTask<TTaskType>>(this);
         }
 
-        public static Task<TTaskType> ParseFromJson(String Json)
+        public static AntiCaptchaTask<TTaskType> ParseFromJson(String Json)
         {
-            return JsonHelper.ParseFromJson<Task<TTaskType>>(Json);
+            return JsonHelper.ParseFromJson<AntiCaptchaTask<TTaskType>>(Json);
         }
 
         public override String ToString()
